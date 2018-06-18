@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".AllBooksListeView">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        app:srcCompat="@drawable/livre" />
+
+    <Button
+        android:id="@+id/button_liste_books_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Livres disponibles"
+
+        android:background="@drawable/button_background"
+        android:shadowDx="-3"
+        android:shadowDy="1"
+        android:shadowRadius="0"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+        <Button
+            android:id="@+id/button_liste_amour_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amour"
+            android:background="@drawable/button_background"
+            android:shadowDx="-3"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/button_liste_aventure_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="aventureOnClickAction"
+            android:text="Aventure"
+            tools:ignore="MissingConstraints,OnClick"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="84dp"
+
+            android:background="@drawable/button_background"
+            android:shadowDx="-3"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/button_liste_scfi_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Science Fiction"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="132dp"
+
+            android:background="@drawable/button_background"
+            android:shadowDx="-3"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/button_liste_historique_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Historique"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="180dp"
+
+            android:background="@drawable/button_background"
+            android:shadowDx="-3"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            />
+
+    <Button
+        android:id="@+id/buttonDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="telecharger"
+        android:text="Télécharger le pack best libres"
+
+        android:background="@drawable/button_background"
+        android:shadowDx="-3"
+        android:shadowDy="1"
+        android:shadowRadius="0"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
